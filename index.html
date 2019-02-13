@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ToDoList</title>
+</head>
+<style>
+  body {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .wrapper {
+    max-width: 1000px;
+    margin: 24px auto;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  #completed-list li span {
+    color: #4c525a;
+    text-decoration: line-through;
+  }
+</style>
+<body>
+<div class="wrapper">
+  <label>
+    <input type="text" placeholder="ToDo Item Name" id="item-value"/>
+  </label>
+  <button id="add-item">Add</button>
+</div>
+<div class="wrapper">
+  <h2>ToDo List:</h2>
+  <ul id="todo-list"></ul>
+</div>
+<div class="wrapper">
+  <h2>Completed List:</h2>
+  <ul id="completed-list"></ul>
+</div>
+<script type="application/javascript" src="./main.js"></script>
+</body>
+</html>
